@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct CharacterInfo: Codable {
+
+struct CharacterModelDTO: Codable {
     
     let quote: String
     let characterName: String
@@ -20,3 +21,5 @@ struct CharacterInfo: Codable {
         case imageURL = "image"
     }
 }
+
+typealias CharacterInfoResponse = [CharacterModelDTO]

@@ -8,9 +8,11 @@
 import UIKit
 
 
-class NetworkEngine {
+class NetworkEngine<T: Codable> {
     
-    static func request<T: Codable>(endpoint: Endpoint, completion: @escaping (Result<T, Error>) -> (Void)) {
+    typealias NetworkFetchingCompletion = ((Result<T, Error>) -> Void)
+    
+    static func request(endpoint: Endpoint, completion: @escaping NetworkFetchingCompletion) {
         
         var urlComponents = URLComponents()
         urlComponents.scheme = endpoint.scheme
@@ -34,7 +36,7 @@ class NetworkEngine {
             }
             guard response != nil, let data = data else { return }
             
-            DispatchQueue.main.async {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 
                 let decoder = JSONDecoder()
                 if let responseObject = try? decoder.decode(T.self, from: data) {
