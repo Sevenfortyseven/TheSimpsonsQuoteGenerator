@@ -18,11 +18,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="Screenshots/screenshot1.png" width="200" height="400">  <img src="Screenshots/screenshot2.png" width="200" height="400"> 
+<img src="Screenshots/screenshot1.png" width="200" height="400">                      <img src="Screenshots/screenshot2.png" width="200" height="400"> 
 
 
 A simple MVVM playground that turned into something beautiful, Simpsons quote generator...
-The app was built the with basic MVVM principles.
+The app was built using basic MVVM principles.
+API used: 
+
+* thesimpsonsquoteapi.glitch.me
 
 
 ### Built With
