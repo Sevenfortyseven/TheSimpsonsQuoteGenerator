@@ -88,7 +88,7 @@ final class HomeViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(refreshQuotesOnTouch), for: .touchUpInside)
         button.setImage(UIImage(systemName: "arrow.clockwise"), for: .normal)
-        button.tintColor = .secondaryColor
+        button.tintColor = .quaternaryColor
         return button
     }()
     
@@ -170,6 +170,7 @@ extension HomeViewController {
         /// Quotes refresh button
         constraints.append(refreshQuotes.topAnchor.constraint(equalTo: self.view.topAnchor, constant: topPadding))
         constraints.append(refreshQuotes.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: rightPadding))
+    
         
         NSLayoutConstraint.activate(constraints)
     }

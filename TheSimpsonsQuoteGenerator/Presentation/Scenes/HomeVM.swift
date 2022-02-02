@@ -92,6 +92,7 @@ final class HomeViewModel {
     
     private func startObserving() {
         NotificationCenter.default.addObserver(forName: .refetchButtonPressed, object: nil, queue: .main) { [weak self] _ in
+            self?.cellVMs = []
             self?.refetchData()
         }
     }

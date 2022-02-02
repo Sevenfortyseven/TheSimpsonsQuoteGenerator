@@ -1,2 +1,43 @@
-# TheSimpsonsQuoteGenerator
-An app that generates Simpson's characters quotes, simple as that
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="Screenshots/appLogo.png" alt="Logo" width="140" height="140">
+  </a>
+
+<h3 align="center">Simpsons Quotes Generator</h3>
+
+  <p align="center">
+    An app that generates quotes from simpsons
+  </p>
+</div>
+
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+<img src="Screenshots/screenshot1.png" width="200" height="400">  <img src="Screenshots/screenshot2.png" width="200" height="400"> 
+
+
+A simple MVVM playground that turned into something beautiful, Simpsons quote generator...
+The app was built the with basic MVVM principles.
+
+
+### Built With
+
+* Xcode 13
+* Swift programming language
+
+
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Sevenfortyseven/TheSimpsonsQuoteGenerator.git
+   ```
+
+
+
